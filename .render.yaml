@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: spare-forge-spares
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: python spare_forge_spares.py
+    autoDeploy: true
