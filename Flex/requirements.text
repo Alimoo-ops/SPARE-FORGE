@@ -1,0 +1,11 @@
+# create_requirements.py
+requirements = [
+    "Flask==2.3.2",
+    "Werkzeug==2.3.6"
+]
+
+with open("requirements.txt", "w") as f:
+    for r in requirements:
+        f.write(r + "\n")
+
+print("requirements.txt created successfully!")
