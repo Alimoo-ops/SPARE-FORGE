@@ -5,5 +5,5 @@ services:
     plan: free
     region: oregon
     buildCommand: pip install -r requirements.txt
-    startCommand: python spare_forge_spares.py
+    startCommand: gunicorn spare_forge_spares:app
     autoDeploy: true
